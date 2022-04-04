@@ -10,4 +10,4 @@ Esse repositório contém os contratos desenvolvidos durante as lives code da co
 .<br>
 .<br>
 
-<sub> ps.: _Os contratos desenvolvidos aqui não devem ser utilizados em projetos reais, já que foram feitos com objetivo educacionais e não foram testados o suficiente para serem colocados em produção._ </sub>
+<sub> ps.: _Os contratos desenvolvidos aqui não devem ser utilizados em projetos reais, já que foram feitos com objetivo educacional e não foram testados o suficiente para serem colocados em produção._ </sub>
