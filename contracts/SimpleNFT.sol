@@ -15,6 +15,8 @@ import "@openzeppelin/contracts/utils/Counters.sol";
   - utilizar a interface do Etherscan para interagir com o contrato;
   - utilizar a api do OpenSea para verifiacar se o metadado está correto;
   - ver a coleção e os NFTs no OpenSea (testnet);
+  Rinkeby: https://rinkeby.etherscan.io/address/0x22a0fAF00d685fC4ea78Be5F29092cE2fDfB4400
+  OpenSea: https://testnets.opensea.io/collection/nft-brcwefueyt
  */
 
 contract SimpleNFT is Ownable, ERC721 {
