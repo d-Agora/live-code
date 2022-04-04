@@ -1,15 +1,13 @@
-# Basic Sample Hardhat Project
+# Smart contracts com Solidity
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Esse repositório contém os contratos desenvolvidos durante as lives code da comunidade **dAgora**, onde o objetivo é ajudar pessoas interessadas na área de blockchain a aprender mais sobre o assunto de forma gratuita e colaborativa.
 
-Try running some of the following tasks:
+## Lives
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+- [SimpleNFT](contracts/SimpleNFT.sol): colecionável simples;
+
+.<br>
+.<br>
+.<br>
+
+<sub> ps.: _Os contratos desenvolvidos aqui não devem ser utilizados em projetos reais, já que foram feitos com objetivo educacionais e não foram testados o suficiente para serem colocados em produção._ </sub>

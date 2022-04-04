@@ -5,6 +5,18 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
+/**
+ Live Code: Colecionável (NFT)
+ Data: 03 de Abril de 2022
+ Objetivos: 
+  - criar um contrato simples de um colecionável;
+  - fazer o deploy na Rinkeby, testnet da Ethereum;
+  - verificar o contrato no Etherscan;
+  - utilizar a interface do Etherscan para interagir com o contrato;
+  - utilizar a api do OpenSea para verifiacar se o metadado está correto;
+  - ver a coleção e os NFTs no OpenSea (testnet);
+ */
+
 contract SimpleNFT is Ownable, ERC721 {
   using Counters for Counters.Counter;
   using Strings for uint256;
