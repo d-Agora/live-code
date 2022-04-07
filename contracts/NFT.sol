@@ -15,11 +15,11 @@ import "@openzeppelin/contracts/utils/Counters.sol";
   - utilizar a interface do Etherscan para interagir com o contrato;
   - utilizar a api do OpenSea para verifiacar se o metadado está correto;
   - ver a coleção e os NFTs no OpenSea (testnet);
-  Rinkeby: https://rinkeby.etherscan.io/address/0x22a0fAF00d685fC4ea78Be5F29092cE2fDfB4400
-  OpenSea: https://testnets.opensea.io/collection/nft-brcwefueyt
+  Rinkeby: https://rinkeby.etherscan.io/address/0x966037bC65f80964a34B5A8852A1503fB1748d07
+  OpenSea: https://testnets.opensea.io/collection/nft-hg3vagull1
  */
 
-contract SimpleNFT is Ownable, ERC721 {
+contract NFT is Ownable, ERC721 {
   using Counters for Counters.Counter;
   using Strings for uint256;
 
@@ -36,7 +36,7 @@ contract SimpleNFT is Ownable, ERC721 {
   constructor(
     string memory baseURI_
     ) 
-    ERC721("SimpleNFT", "SNFT")
+    ERC721("NFT", "NFT")
     {
     MAX_SUPPLY = 1000;
     MAX_PER_TRANSACTION = 3;
@@ -85,4 +85,10 @@ contract SimpleNFT is Ownable, ERC721 {
   function _baseURI() internal view virtual override returns (string memory) {
     return baseURI;
   }
+
+   function withdraw() external onlyOwner {
+    (bool success, ) = payable(msg.sender).call{value: address(this).balance}("");
+    require(success);
+  }
+ 
 }

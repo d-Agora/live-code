@@ -3,7 +3,7 @@
   "scripts": {
     "deploy-rinkeby": "npx hardhat compile && npx hardhat run scripts/deploy.js --network rinkeby",
     "deploy-mainnet": "npx hardhat compile && npx hardhat run scripts/deploy.js --network mainnet",
-    "verify-rinkeby": "npx hardhat verify --network rinkeby --constructor-args scripts/args.js 0x22a0fAF00d685fC4ea78Be5F29092cE2fDfB4400",
+    "verify-rinkeby": "npx hardhat verify --network rinkeby --constructor-args scripts/args.js 0x966037bC65f80964a34B5A8852A1503fB1748d07",
     "verify-mainnet": "npx hardhat verify --network mainnet --constructor-args scripts/ars.js 0xc8c3F294A86b47c0bd9a1dD264a43B6696a42c97"
   },
   "devDependencies": {

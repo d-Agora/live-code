@@ -11,7 +11,7 @@ async function main() {
   const balance = await deployer.getBalance();
   console.log(`Account balance: ${balance}`);
 
-  const NFT = await hre.ethers.getContractFactory("SimpleNFT");
+  const NFT = await hre.ethers.getContractFactory("NFT");
   const contract = await NFT.deploy(baseURI);
 
   await contract.deployed();
